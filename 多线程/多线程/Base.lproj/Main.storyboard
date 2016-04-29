@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76j-dD-P3f">
+                                <rect key="frame" x="180" y="235" width="54" height="30"/>
+                                <state key="normal" title="pthread"/>
+                                <connections>
+                                    <action selector="pthreadClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lpz-1N-9nR"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="quR-kB-hVR">
+                                <rect key="frame" x="40" y="71" width="334" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb1-9l-IjN">
+                                <rect key="frame" x="171" y="282" width="72" height="30"/>
+                                <state key="normal" title="NSthread1"/>
+                                <connections>
+                                    <action selector="NSThread1Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebN-Oc-dcb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQh-sG-eDv">
+                                <rect key="frame" x="170" y="320" width="74" height="30"/>
+                                <state key="normal" title="NSthread2"/>
+                                <connections>
+                                    <action selector="NSThread2Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJJ-n9-MfJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2H-y7-yq0">
+                                <rect key="frame" x="168" y="353" width="78" height="30"/>
+                                <state key="normal" title="NSThread3"/>
+                                <connections>
+                                    <action selector="NSThread3Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aI5-b0-QSM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSm-ae-EU7">
+                                <rect key="frame" x="114" y="411" width="186" height="30"/>
+                                <state key="normal" title="GCD-异步函数+并发队列"/>
+                                <connections>
+                                    <action selector="AsyncConcurrent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E4n-sg-WmD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spo-Zq-cox">
+                                <rect key="frame" x="114" y="442" width="186" height="30"/>
+                                <state key="normal" title="GCD-同步函数+并发队列"/>
+                                <connections>
+                                    <action selector="GCDClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62i-by-Jgc"/>
+                                    <action selector="SyncConcurrent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6J9-W0-Kxn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHn-sw-jlb">
+                                <rect key="frame" x="114" y="473" width="186" height="30"/>
+                                <state key="normal" title="GCD-异步函数+串行队列"/>
+                                <connections>
+                                    <action selector="GCDClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQH-mW-XUO"/>
+                                    <action selector="SyncConcurrent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IFl-y0-5aT"/>
+                                    <action selector="SyncSerial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X28-bS-NEo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7t-AF-8zH">
+                                <rect key="frame" x="114" y="500" width="186" height="30"/>
+                                <state key="normal" title="GCD-同步函数+串行队列"/>
+                                <connections>
+                                    <action selector="AsyncSerial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M3M-x8-vOA"/>
+                                    <action selector="GCDClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bh-xI-617"/>
+                                    <action selector="SyncConcurrent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpB-gu-1ML"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mw-QR-GrZ">
+                                <rect key="frame" x="114" y="549" width="186" height="30"/>
+                                <state key="normal" title="GCD-同步函数+主队列"/>
+                                <connections>
+                                    <action selector="AsyncSerial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qjz-H5-meu"/>
+                                    <action selector="GCDClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ho-kw-7zT"/>
+                                    <action selector="SyncConcurrent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g5v-b2-sdN"/>
+                                    <action selector="SyncMain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NfI-JD-qP7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbs-ke-LFk">
+                                <rect key="frame" x="114" y="525" width="186" height="30"/>
+                                <state key="normal" title="GCD-异步函数+主队列"/>
+                                <connections>
+                                    <action selector="AsyncMain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75B-FZ-DWc"/>
+                                    <action selector="AsyncSerial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhc-7y-jQA"/>
+                                    <action selector="GCDClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Do-CY-IMa"/>
+                                    <action selector="SyncConcurrent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GY-bQ-h4s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNp-k9-s0T">
+                                <rect key="frame" x="124" y="580" width="167" height="30"/>
+                                <state key="normal" title="NSOperationQueue"/>
+                                <connections>
+                                    <action selector="NSOperationQueue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hj0-aj-MIz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="RHn-sw-jlb" secondAttribute="trailing" constant="94" id="22a-3M-ZHt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H7t-AF-8zH" secondAttribute="bottom" constant="206" id="2Zl-YT-H8Y"/>
+                            <constraint firstItem="quR-kB-hVR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="2fi-rH-1Bk"/>
+                            <constraint firstItem="H7t-AF-8zH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="2oh-uD-02l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vbs-ke-LFk" secondAttribute="trailing" constant="94" id="5he-Gi-aUX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vbs-ke-LFk" secondAttribute="bottom" constant="181" id="6bD-9r-aEo"/>
+                            <constraint firstItem="vSm-ae-EU7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="76U-pQ-E4y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="spo-Zq-cox" secondAttribute="bottom" constant="264" id="9Av-jr-NlS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h2H-y7-yq0" secondAttribute="trailing" constant="148" id="Bu1-E4-PQc"/>
+                            <constraint firstItem="uQh-sG-eDv" firstAttribute="top" secondItem="Rb1-9l-IjN" secondAttribute="bottom" constant="8" id="Csz-ie-cgc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uQh-sG-eDv" secondAttribute="trailing" constant="150" id="E2r-Jb-8rF"/>
+                            <constraint firstItem="h2H-y7-yq0" firstAttribute="top" secondItem="uQh-sG-eDv" secondAttribute="bottom" constant="3" id="Eg0-pi-YYt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rb1-9l-IjN" secondAttribute="trailing" constant="151" id="EpB-sU-fJM"/>
+                            <constraint firstItem="spo-Zq-cox" firstAttribute="top" secondItem="vSm-ae-EU7" secondAttribute="bottom" constant="1" id="FKU-BP-DJz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="76j-dD-P3f" secondAttribute="bottom" constant="471" id="HxL-SU-LZp"/>
+                            <constraint firstItem="H7t-AF-8zH" firstAttribute="top" secondItem="spo-Zq-cox" secondAttribute="bottom" constant="28" id="ILr-Ys-IKp"/>
+                            <constraint firstItem="h2H-y7-yq0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="IPQ-ik-fGc"/>
+                            <constraint firstAttribute="trailing" secondItem="quR-kB-hVR" secondAttribute="trailing" constant="40" id="Jvo-pA-PWQ"/>
+                            <constraint firstItem="spo-Zq-cox" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="Ne2-BI-r3x"/>
+                            <constraint firstItem="RHn-sw-jlb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="Nsa-k7-sZi"/>
+                            <constraint firstItem="uQh-sG-eDv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="150" id="O4Y-se-Peu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bNp-k9-s0T" secondAttribute="bottom" constant="126" id="TQT-sm-VE0"/>
+                            <constraint firstItem="9Mw-QR-GrZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="UDZ-JQ-HG2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="spo-Zq-cox" secondAttribute="trailing" constant="94" id="UoL-Co-0vV"/>
+                            <constraint firstItem="vbs-ke-LFk" firstAttribute="top" secondItem="RHn-sw-jlb" secondAttribute="bottom" constant="22" id="ZLJ-dS-AQJ"/>
+                            <constraint firstItem="76j-dD-P3f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="160" id="a6B-fu-LD8"/>
+                            <constraint firstItem="vSm-ae-EU7" firstAttribute="top" secondItem="h2H-y7-yq0" secondAttribute="bottom" constant="28" id="aQH-9d-die"/>
+                            <constraint firstItem="Rb1-9l-IjN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="151" id="ahD-sa-LR4"/>
+                            <constraint firstItem="bNp-k9-s0T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="104" id="bP2-Qf-rrt"/>
+                            <constraint firstItem="h2H-y7-yq0" firstAttribute="top" secondItem="uQh-sG-eDv" secondAttribute="bottom" constant="3" id="bfA-93-p8C"/>
+                            <constraint firstItem="9Mw-QR-GrZ" firstAttribute="top" secondItem="H7t-AF-8zH" secondAttribute="bottom" constant="19" id="bv3-rG-Z9m"/>
+                            <constraint firstAttribute="bottom" secondItem="quR-kB-hVR" secondAttribute="bottom" constant="537" id="dIn-J0-d37"/>
+                            <constraint firstItem="Rb1-9l-IjN" firstAttribute="top" secondItem="76j-dD-P3f" secondAttribute="bottom" constant="17" id="dxd-I5-uvG"/>
+                            <constraint firstItem="uQh-sG-eDv" firstAttribute="top" secondItem="Rb1-9l-IjN" secondAttribute="bottom" constant="8" id="gCN-ti-hAs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H7t-AF-8zH" secondAttribute="trailing" constant="94" id="gSU-X7-uxx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Mw-QR-GrZ" secondAttribute="trailing" constant="94" id="hNq-FM-XG1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="76j-dD-P3f" secondAttribute="trailing" constant="160" id="iRj-0j-G09"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bNp-k9-s0T" secondAttribute="trailing" constant="103" id="j1T-8T-cxV"/>
+                            <constraint firstItem="quR-kB-hVR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="j4R-B3-1rf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vSm-ae-EU7" secondAttribute="trailing" constant="94" id="kZ4-rs-BbQ"/>
+                            <constraint firstItem="vbs-ke-LFk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="kbA-bS-BtV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RHn-sw-jlb" secondAttribute="bottom" constant="233" id="s0k-7a-rb2"/>
+                            <constraint firstItem="76j-dD-P3f" firstAttribute="top" secondItem="quR-kB-hVR" secondAttribute="bottom" constant="36" id="v6A-Lt-Uai"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Mw-QR-GrZ" secondAttribute="bottom" constant="157" id="vuO-QT-aP4"/>
+                            <constraint firstItem="RHn-sw-jlb" firstAttribute="top" secondItem="spo-Zq-cox" secondAttribute="bottom" constant="1" id="wE0-hO-9mp"/>
+                            <constraint firstItem="bNp-k9-s0T" firstAttribute="top" secondItem="9Mw-QR-GrZ" secondAttribute="bottom" constant="1" id="xfT-OF-iZ8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vSm-ae-EU7" secondAttribute="bottom" constant="295" id="zGa-jc-ARj"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="341"/>
+        </scene>
+    </scenes>
+</document>
